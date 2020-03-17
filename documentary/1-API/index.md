@@ -14,7 +14,7 @@ Because of [a bug](https://github.com/microsoft/TypeScript/issues/28905) in VSCo
 
 ## Special Cases
 
-Some CSS properties will interfere with attributes of certain tags. There's an ignore map that prevents the output of the following cases:
+Some CSS properties will interfere with attributes of certain tags. There's an ignore map at [`/ignore.json`](/ignore.json) that prevents the output of the following cases:
 
 <fork lang="html">example/ignore</fork>
 
