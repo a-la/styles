@@ -1,7 +1,7 @@
-import myNewPackage from '../src'
+import style from '../src'
 
 (async () => {
-  const res = await myNewPackage({
+  const res = await style({
     text: 'example',
   })
   console.log(res)

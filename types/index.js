@@ -2,10 +2,10 @@ export {}
 
 /* typal types/api.xml namespace */
 /**
- * @typedef {_myNewPackage.myNewPackage} myNewPackage {{ description }}
- * @typedef {(config: !_myNewPackage.Config) => string} _myNewPackage.myNewPackage {{ description }}
+ * @typedef {_style.style} style CSS Properties For JSX.
+ * @typedef {(config: !_style.Config) => string} _style.style CSS Properties For JSX.
  */
 
 /**
- * @typedef {import('..').Config} _myNewPackage.Config
+ * @typedef {import('..').Config} _style.Config
  */

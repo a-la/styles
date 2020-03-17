@@ -1,11 +1,11 @@
-# my-new-package
+# @a-la/style
 
-%NPM: my-new-package%
+%NPM: @a-la/style%
 
-`my-new-package` is {{ description }}
+`@a-la/style` is CSS Properties For JSX.
 
 ```sh
-yarn add my-new-package
+yarn add @a-la/style
 ```
 
 ## Table Of Contents

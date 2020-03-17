@@ -1,1 +1,1 @@
-{{ description }}
+CSS Properties For JSX.

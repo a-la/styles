@@ -1,19 +1,19 @@
 import { c } from 'erte'
 
 /**
- * @type {_myNewPackage.myNewPackage}
+ * @type {_style.style}
  */
-export default async function myNewPackage(config = {}) {
+export default async function style(config = {}) {
   const {
     shouldRun = true,
     text = '',
   } = config
   if (!shouldRun) return ''
-  console.log('my-new-package called with %s', c(text, 'yellow'))
+  console.log('@a-la/style called with %s', c(text, 'yellow'))
   return text
 }
 
 /**
  * @suppress {nonStandardJsDocs}
- * @typedef {import('../types').myNewPackage} _myNewPackage.myNewPackage
+ * @typedef {import('../types').style} _style.style
  */
