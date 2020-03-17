@@ -36,7 +36,11 @@
     "a-la",
     "css",
     "jsx",
-    "style"
+    "style",
+    "styles",
+    "react",
+    "preact",
+    "typings"
   ],
   "author": "Anton <anton@adc.sh>",
   "license": "AGPL-3.0",
