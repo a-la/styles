@@ -1,0 +1,6 @@
+{
+  "name": "@a-la/style-preact",
+  "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts"
+}

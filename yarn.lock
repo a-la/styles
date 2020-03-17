@@ -64,6 +64,11 @@ typal@^1.26.2:
   resolved "https://registry.yarnpkg.com/typal/-/typal-1.26.2.tgz#081ae64710cdb2ccb593280a874372f945182c7f"
   integrity sha512-ljiVBveC6U4a83g0NBGW2JaYHT7bsUitxYtaznQAHppGgG8XScx4oZjd6zaqv0QpfOb6MMmqrMLGuGG2xl/xgw==
 
+vscode-web-custom-data@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/vscode-web-custom-data/-/vscode-web-custom-data-0.1.3.tgz#7fd15cd29290f4d6b6b125fa12a7ef8bbc440b55"
+  integrity sha512-u9RdZ3aIjx5f0WYSb8EIcmo7trgrJk+bVfGDfjyBSlfG59XWg8xw/JVfHNpO5AklustCez3vixnGLAOWzhPkZg==
+
 yarn-s@1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/yarn-s/-/yarn-s-1.2.3.tgz#ec8fac3bca62c4c970b7e88eef98a5f01c421dab"
