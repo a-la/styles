@@ -53,25 +53,21 @@ Because of [a bug](https://github.com/microsoft/TypeScript/issues/28905) in VSCo
 Some CSS properties will interfere with attributes of certain tags. There's an ignore map that prevents the output of the following cases:
 
 ```html
-<hr	width color size >
-<pre	width >
-<img	width height src alt >
-<iframe	width height src >
-<embed	width height src >
-<object	width height border >
-<video	width height src >
-<input	width height src size alt >
-<canvas	width height >
-<table	border >
-<body	background >
-<meta	content >
-<br	clear >
-<audio	src >
-<source	src >
-<track	src >
-<script	src >
-<select	size >
-<area	alt >
+<hr	width color size>
+<pre	width>
+<img	width height alt>
+<iframe	width height>
+<embed	width height>
+<object	width height border>
+<video	width height>
+<input	width height size alt>
+<canvas	width height>
+<table	border>
+<body	background>
+<meta	content>
+<br	clear>
+<select	size>
+<area	alt>
 ```
 
 <p align="center"><a href="#table-of-contents">
