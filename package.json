@@ -23,7 +23,8 @@
     "src/index.js",
     "preact",
     "types/index.d.ts",
-    "map.json"
+    "map.json",
+    "ignore.json"
   ],
   "types": "types/index.d.ts",
   "repository": {

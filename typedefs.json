@@ -1,10 +1,10 @@
 {
   "_style.style": {
-    "link": "https://github.com/stylejs/package#async-mynewpackageconfig-config-string",
+    "link": "https://github.com/a-la/style#async-styleconfig-config-string",
     "description": "CSS Properties For JSX."
   },
   "_style.Config": {
-    "link": "https://github.com/stylejs/package#type-config",
+    "link": "https://github.com/a-la/style#type-config",
     "description": "Options for the program."
   }
 }

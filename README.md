@@ -1,64 +1,77 @@
 # @a-la/styles
 
-[![npm version](https://badge.fury.io/js/@a-la/styles.svg)](https://www.npmjs.com/package/@a-la/styles)
+[![npm version](https://badge.fury.io/js/%40a-la%2Fstyles.svg)](https://www.npmjs.com/package/@a-la/styles)
 
 `@a-la/styles` is CSS Properties For JSX.
 
+<p align="center">
+  <img src="./doc/styles.gif" alt="CSS styles JSX autocompletions">
+</p>
+
 ```sh
-yarn add @a-la/styles
+yarn add -D @a-la/styles
+npm i --save-dev @a-la/styles
 ```
 
 ## Table Of Contents
 
 - [Table Of Contents](#table-of-contents)
-- [API](#api)
-- [`async style(config: !Config): string`](#async-mynewpackageconfig-config-string)
-  * [`Config`](#type-config)
-- [CLI](#cli)
+- [Usage](#usage)
+- [Special Cases](#special-cases)
 - [Copyright & License](#copyright--license)
 
 <p align="center"><a href="#table-of-contents">
   <img src="/.documentary/section-breaks/0.svg?sanitize=true">
 </a></p>
 
-## API
+## Usage
 
-The package is available by importing its default function:
+By installing this package, you will be able to specify styles on tags and components as JSX properties when using [`alamode`](https://github.com/a-la/alamode) transpiler.
 
-```js
-import style from '@a-la/styles'
+To receive access to auto-completions, you'll need to import the `@a-la/styles` package in your source code:
+
+```jsx
+import '@a-la/styles'
+// or if using Preact 8:
+import '@a-la/styles/preact'
+
+export const Component = () => {
+  return (<div border="1px solid green">Hello World!</div>)
+}
 ```
+
+The actual import doesn't do anything as the source file is blank. It is needed only for VSCode to pick up distributed typings.
+
+Because of [a bug](https://github.com/microsoft/TypeScript/issues/28905) in VSCode, you won't see properties with hyphens, e.g., `margin-top` and will only see `marginTop`, but you can actually use both. The camel cases are added for discoverability of properties.
 
 <p align="center"><a href="#table-of-contents">
   <img src="/.documentary/section-breaks/1.svg?sanitize=true">
 </a></p>
 
-## <code>async <ins>style</ins>(</code><sub><br/>&nbsp;&nbsp;`config: !Config,`<br/></sub><code>): <i>string</i></code>
-CSS Properties For JSX.
+## Special Cases
 
- - <kbd><strong>config*</strong></kbd> <em><code><a href="#type-config" title="Options for the program.">!Config</a></code></em>: The config.
+Some CSS properties will interfere with attributes of certain tags. There's an ignore map that prevents the output of the following cases:
 
-__<a name="type-config">`Config`</a>__: Options for the program.
-
-
-|   Name    |       Type       |    Description    | Default |
-| --------- | ---------------- | ----------------- | ------- |
-| shouldRun | <em>boolean</em> | A boolean option. | `true`  |
-| text      | <em>string</em>  | A text to return. | -       |
-
-```js
-import style from '@a-la/styles'
-
-(async () => {
-  const res = await style({
-    text: 'example',
-  })
-  console.log(res)
-})()
-```
-```
-@a-la/styles called with example
-example
+```html
+<hr	width color size >
+<pre	width >
+<img	width height src alt >
+<iframe	width height src >
+<embed	width height src >
+<object	width height border >
+<video	width height src >
+<input	width height src size alt >
+<canvas	width height >
+<table	border >
+<body	background >
+<meta	content >
+<br	clear >
+<audio	src >
+<source	src >
+<track	src >
+<script	src >
+<select	size >
+<area	alt >
 ```
 
 <p align="center"><a href="#table-of-contents">
@@ -69,10 +82,19 @@ example
 
 GNU Affero General Public License v3.0
 
+Data comes from [VS Code Web Custom Data](https://www.npmjs.com/package/vscode-web-custom-data):
+
+- `css/mdn/mdn-documentation.js` is built upon content from [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web) and distributed under CC BY-SA 2.5.
+
 <table>
   <tr>
-    <td><img src="https://avatars3.githubusercontent.com/u/38815725?v=4&amp;s=100" alt="a-la"></td>
-    <td>© <a href="https://alamode.cc">À La Mode</a> 2020</td>
+    <th>
+      <a href="https://www.artd.eco">
+        <img width="100" src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png"
+          alt="Art Deco">
+      </a>
+    </th>
+    <th>© <a href="https://www.artd.eco">Art Deco™</a> for <a href="https://alamode.cc">À La Mode</a> 2020</th>
   </tr>
 </table>
 

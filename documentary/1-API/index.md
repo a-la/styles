@@ -4,20 +4,18 @@ By installing this package, you will be able to specify styles on tags and compo
 
 To receive access to auto-completions, you'll need to import the `@a-la/styles` package in your source code:
 
-%EXAMPLE: example, ../ => @a-la/bootstrap%
+%EXAMPLE: example, ../ => @a-la/styles%
 
 The actual import doesn't do anything as the source file is blank. It is needed only for VSCode to pick up distributed typings.
 
-Because of [a bug](https://github.com/microsoft/TypeScript/issues/28905) in VSCode, you won't see properties with hyphens, e.g., `container-fluid` and will only see `containerFluid`, but you can actually use both. The camel cases are added for discoverability of classes.
-
+Because of [a bug](https://github.com/microsoft/TypeScript/issues/28905) in VSCode, you won't see properties with hyphens, e.g., `margin-top` and will only see `marginTop`, but you can actually use both. The camel cases are added for discoverability of properties.
 
 %~%
 
-<typedef method="style">types/api.xml</typedef>
+## Special Cases
 
-<typedef>types/index.xml</typedef>
+Some CSS properties will interfere with attributes of certain tags. There's an ignore map that prevents the output of the following cases:
 
-%EXAMPLE: example, ../src => @a-la/styles%
-%FORK example%
+<fork lang="html">example/ignore</fork>
 
 %~%
