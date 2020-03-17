@@ -45,8 +45,11 @@ ${desc.replace(/^/mg, ' * ')}
 ${/-/.test(name) ? `'${name}'` : name}?: ${type}`
 }
 
-// those work on @font-face, not elements.
-const IGNORE = ['src', 'unicode-range']
+const IGNORE = [
+  'src', 'unicode-range', 'font-display', // those work on @font-face, not elements.
+  'user-zoom', 'min-zoom', 'max-zoom',
+  'additive-symbols', 'fallback', 'negative', 'pad', 'prefix', 'range', 'suffix', 'system', 'symbols', 'speak-as', 'bleed', 'marks',
+]
 
 const props = MDN.map(({ name, values = [], references = [], description = '' }) => {
   if (IGNORE.includes(name)) return null

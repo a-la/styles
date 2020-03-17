@@ -1412,14 +1412,6 @@ declare global {
        */
       counterReset?: 'none'
       /**
-       * `CSS` The font-display descriptor determines how a font face is displayed based on whether and when it is downloaded and ready to use.
-       */
-      'font-display'?: string
-      /**
-       * `CSS` The font-display descriptor determines how a font face is displayed based on whether and when it is downloaded and ready to use.
-       */
-      fontDisplay?: string
-      /**
        * `CSS` Shorthand property for setting 'border-image-source', 'border-image-slice', 'border-image-width', 'border-image-outset' and 'border-image-repeat'. Omitted values are set to their initial values.
        * [MDN Reference](https://developer.mozilla.org/docs/Web/CSS/border-image)
        */
@@ -3003,26 +2995,6 @@ declare global {
        */
       marginBlock?: string
       /**
-       * `CSS` The user-zoom CSS descriptor controls whether or not the user can change the zoom factor of a document defined by @viewport.
-       */
-      'user-zoom'?: string
-      /**
-       * `CSS` The user-zoom CSS descriptor controls whether or not the user can change the zoom factor of a document defined by @viewport.
-       */
-      userZoom?: string
-      /**
-       * `CSS` The min-zoom CSS descriptor sets the minimum zoom factor of a document defined by the @viewport at-rule. The browser will not zoom out any further than this, whether automatically or at the user's request.
-       * 
-       * A zoom factor of 1.0 or 100% corresponds to no zooming. Larger values are zoomed in. Smaller values are zoomed out.
-       */
-      'min-zoom'?: string
-      /**
-       * `CSS` The min-zoom CSS descriptor sets the minimum zoom factor of a document defined by the @viewport at-rule. The browser will not zoom out any further than this, whether automatically or at the user's request.
-       * 
-       * A zoom factor of 1.0 or 100% corresponds to no zooming. Larger values are zoomed in. Smaller values are zoomed out.
-       */
-      minZoom?: string
-      /**
        * `CSS` The inset-block-end CSS property defines the logical block end offset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the top, right, bottom, or left property depending on the values defined for writing-mode, direction, and text-orientation.
        * [MDN Reference](https://developer.mozilla.org/docs/Web/CSS/inset-block-end)
        */
@@ -3078,18 +3050,6 @@ declare global {
        * `CSS` The image-resolution property specifies the intrinsic resolution of all raster images used in or on the element. It affects both content images (e.g. replaced elements and generated content) and decorative images (such as background-image). The intrinsic resolution of an image is used to determine the image’s intrinsic dimensions.
        */
       imageResolution?: string
-      /**
-       * `CSS` The max-zoom CSS descriptor sets the maximum zoom factor of a document defined by the @viewport at-rule. The browser will not zoom in any further than this, whether automatically or at the user's request.
-       * 
-       * A zoom factor of 1.0 or 100% corresponds to no zooming. Larger values are zoomed in. Smaller values are zoomed out.
-       */
-      'max-zoom'?: string
-      /**
-       * `CSS` The max-zoom CSS descriptor sets the maximum zoom factor of a document defined by the @viewport at-rule. The browser will not zoom in any further than this, whether automatically or at the user's request.
-       * 
-       * A zoom factor of 1.0 or 100% corresponds to no zooming. Larger values are zoomed in. Smaller values are zoomed out.
-       */
-      maxZoom?: string
       /**
        * `CSS` The orientation CSS @media media feature can be used to apply styles based on the orientation of the viewport (or the page box, for paged media).
        */
@@ -3243,14 +3203,6 @@ declare global {
        */
       insetInline?: string
       /**
-       * `CSS` @counter-style descriptor. Specifies the symbols used by the marker-construction algorithm specified by the system descriptor. Needs to be specified if the counter system is 'additive'.
-       */
-      'additive-symbols'?: string
-      /**
-       * `CSS` @counter-style descriptor. Specifies the symbols used by the marker-construction algorithm specified by the system descriptor. Needs to be specified if the counter system is 'additive'.
-       */
-      additiveSymbols?: string
-      /**
        * `CSS` Provides alternative text for assistive technology to replace the generated content of a ::before or ::after element. _Ignored on img, area, input_.
        * [MDN Reference](https://developer.mozilla.org/docs/Web/CSS/alt)
        */
@@ -3269,10 +3221,6 @@ declare global {
        * [MDN Reference](https://developer.mozilla.org/docs/Web/CSS/box-decoration-break)
        */
       boxDecorationBreak?: 'clone'|'slice'
-      /**
-       * `CSS` @counter-style descriptor. Specifies a fallback counter style to be used when the current counter style can’t create a representation for a given counter value.
-       */
-      fallback?: string
       /**
        * `CSS` The value of 'normal' implies that when rendering with OpenType fonts the language of the document is used to infer the OpenType language system, used to select language specific features when rendering.
        * [MDN Reference](https://developer.mozilla.org/docs/Web/CSS/font-language-override)
@@ -4620,10 +4568,6 @@ declare global {
        */
       navUp?: 'auto'|'current'|'root'
       /**
-       * `CSS` @counter-style descriptor. Defines how to alter the representation when the counter value is negative.
-       */
-      negative?: string
-      /**
        * `CSS` Shorthand property combines six of the animation properties into a single property.
        */
       '-o-animation'?: 'alternate'|'alternate-reverse'|'backwards'|'both'|'forwards'|'infinite'|'none'|'normal'|'reverse'
@@ -4832,18 +4776,6 @@ declare global {
        */
       offsetInlineStart?: 'auto'
       /**
-       * `CSS` @counter-style descriptor. Specifies a “fixed-width” counter style, where representations shorter than the pad value are padded with a particular <symbol>
-       */
-      pad?: string
-      /**
-       * `CSS` @counter-style descriptor. Specifies a <symbol> that is prepended to the marker representation.
-       */
-      prefix?: string
-      /**
-       * `CSS` @counter-style descriptor. Defines the ranges over which the counter style is defined.
-       */
-      range?: 'auto'|'infinite'
-      /**
        * `CSS` Specifies how text is distributed within the various ruby boxes when their contents do not exactly fill their respective boxes.
        * [MDN Reference](https://developer.mozilla.org/docs/Web/CSS/ruby-align)
        */
@@ -4957,18 +4889,6 @@ declare global {
        * `CSS` Determines the color of the track element of a scroll bar.
        */
       scrollbarTrackColor?: string
-      /**
-       * `CSS` @counter-style descriptor. Specifies a <symbol> that is appended to the marker representation.
-       */
-      suffix?: string
-      /**
-       * `CSS` @counter-style descriptor. Specifies which algorithm will be used to construct the counter’s representation based on the counter value.
-       */
-      system?: 'additive'|'alphabetic'|'cyclic'|'extends'|'fixed'|'numeric'|'symbolic'
-      /**
-       * `CSS` @counter-style descriptor. Specifies the symbols used by the marker-construction algorithm specified by the system descriptor.
-       */
-      symbols?: string
       /**
        * `CSS` Shorthand property combines six of the animation properties into a single property.
        */
@@ -6509,22 +6429,6 @@ declare global {
        * [MDN Reference](https://developer.mozilla.org/docs/Web/CSS/text-underline-offset)
        */
       textUnderlineOffset?: string
-      /**
-       * `CSS` The speak-as descriptor specifies how a counter symbol constructed with a given @counter-style will be represented in the spoken form. For example, an author can specify a counter symbol to be either spoken as its numerical value or just represented with an audio cue.
-       */
-      'speak-as'?: string
-      /**
-       * `CSS` The speak-as descriptor specifies how a counter symbol constructed with a given @counter-style will be represented in the spoken form. For example, an author can specify a counter symbol to be either spoken as its numerical value or just represented with an audio cue.
-       */
-      speakAs?: string
-      /**
-       * `CSS` The bleed CSS at-rule descriptor, used with the @page at-rule, specifies the extent of the page bleed area outside the page box. This property only has effect if crop marks are enabled using the marks property.
-       */
-      bleed?: string
-      /**
-       * `CSS` The marks CSS at-rule descriptor, used with the @page at-rule, adds crop and/or cross marks to the presentation of the document. Crop marks indicate where the page should be cut. Cross marks are used to align sheets.
-       */
-      marks?: string
     }
   }
 }
