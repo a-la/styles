@@ -10,18 +10,15 @@
   "img": [
     "width",
     "height",
-    "src",
     "alt"
   ],
   "iframe": [
     "width",
-    "height",
-    "src"
+    "height"
   ],
   "embed": [
     "width",
-    "height",
-    "src"
+    "height"
   ],
   "object": [
     "width",
@@ -30,13 +27,11 @@
   ],
   "video": [
     "width",
-    "height",
-    "src"
+    "height"
   ],
   "input": [
     "width",
     "height",
-    "src",
     "size",
     "alt"
   ],
@@ -55,18 +50,6 @@
   ],
   "br": [
     "clear"
-  ],
-  "audio": [
-    "src"
-  ],
-  "source": [
-    "src"
-  ],
-  "track": [
-    "src"
-  ],
-  "script": [
-    "src"
   ],
   "select": [
     "size"

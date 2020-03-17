@@ -45,13 +45,17 @@ ${desc.replace(/^/mg, ' * ')}
 ${/-/.test(name) ? `'${name}'` : name}?: ${type}`
 }
 
+// those work on @font-face, not elements.
+const IGNORE = ['src', 'unicode-range']
+
 const props = MDN.map(({ name, values = [], references = [], description = '' }) => {
+  if (IGNORE.includes(name)) return null
   const vals = values.map(({ name: n }) => n)
   const [ref] = references
   let reference = ''
   if (ref) reference = `[${ref.name}](${ref.url})`
   return { name, description, vals, reference }
-})
+}).filter(Boolean)
 
 const ignoreMap = {}
 

@@ -840,10 +840,6 @@ declare module 'react' {
      */
     filter?: 'none'|'blur()'|'brightness()'|'contrast()'|'drop-shadow()'|'grayscale()'|'hue-rotate()'|'invert()'|'opacity()'|'saturate()'|'sepia()'|'url()'
     /**
-     * `CSS` @font-face descriptor. Specifies the resource containing font data. It is required, whether the font is downloadable or locally installed. _Ignored on img, iframe, embed, video, audio, source, track, input, script_.
-     */
-    src?: 'url()'|'format()'|'local()'
-    /**
      * `CSS` Describes how the animation will progress over one cycle of its duration.
      * [MDN Reference](https://developer.mozilla.org/docs/Web/CSS/animation-timing-function)
      */
@@ -1143,14 +1139,6 @@ declare module 'react' {
      * [MDN Reference](https://developer.mozilla.org/docs/Web/CSS/unicode-bidi)
      */
     unicodeBidi?: 'bidi-override'|'embed'|'isolate'|'isolate-override'|'normal'|'plaintext'
-    /**
-     * `CSS` @font-face descriptor. Defines the set of Unicode codepoints that may be supported by the font face for which it is declared.
-     */
-    'unicode-range'?: 'U+26'|'U+20-24F, U+2B0-2FF, U+370-4FF, U+1E00-1EFF, U+2000-20CF, U+2100-23FF, U+2500-26FF, U+E000-F8FF, U+FB00–FB4F'|'U+20-17F, U+2B0-2FF, U+2000-206F, U+20A0-20CF, U+2100-21FF, U+2600-26FF'|'U+20-2FF, U+370-4FF, U+1E00-20CF, U+2100-23FF, U+2500-26FF, U+FB00-FB4F, U+FFF0-FFFD'|'U+20-4FF, U+530-58F, U+10D0-10FF, U+1E00-23FF, U+2440-245F, U+2500-26FF, U+FB00-FB4F, U+FE20-FE2F, U+FFF0-FFFD'|'U+00-7F'|'U+80-FF'|'U+100-17F'|'U+180-24F'|'U+1E00-1EFF'|'U+250-2AF'|'U+370-3FF'|'U+1F00-1FFF'|'U+400-4FF'|'U+500-52F'|'U+00-52F, U+1E00-1FFF, U+2200–22FF'|'U+530–58F'|'U+590–5FF'|'U+600–6FF'|'U+750–77F'|'U+8A0–8FF'|'U+700–74F'|'U+900–97F'|'U+980–9FF'|'U+A00–A7F'|'U+A80–AFF'|'U+B00–B7F'|'U+B80–BFF'|'U+C00–C7F'|'U+C80–CFF'|'U+D00–D7F'|'U+D80–DFF'|'U+118A0–118FF'|'U+E00–E7F'|'U+1A20–1AAF'|'U+AA80–AADF'|'U+E80–EFF'|'U+F00–FFF'|'U+1000–109F'|'U+10A0–10FF'|'U+1200–137F'|'U+1380–139F'|'U+2D80–2DDF'|'U+AB00–AB2F'|'U+1780–17FF'|'U+1800–18AF'|'U+1B80–1BBF'|'U+1CC0–1CCF'|'U+4E00–9FD5'|'U+3400–4DB5'|'U+2F00–2FDF'|'U+2E80–2EFF'|'U+1100–11FF'|'U+AC00–D7AF'|'U+3040–309F'|'U+30A0–30FF'|'U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F'|'U+A4D0–A4FF'|'U+A000–A48F'|'U+A490–A4CF'|'U+2000-206F'|'U+3000–303F'|'U+2070–209F'|'U+20A0–20CF'|'U+2100–214F'|'U+2150–218F'|'U+2190–21FF'|'U+2200–22FF'|'U+2300–23FF'|'U+E000-F8FF'|'U+FB00–FB4F'|'U+FB50–FDFF'|'U+1F600–1F64F'|'U+2600–26FF'|'U+1F300–1F5FF'|'U+1F900–1F9FF'|'U+1F680–1F6FF'
-    /**
-     * `CSS` @font-face descriptor. Defines the set of Unicode codepoints that may be supported by the font face for which it is declared.
-     */
-    unicodeRange?: 'U+26'|'U+20-24F, U+2B0-2FF, U+370-4FF, U+1E00-1EFF, U+2000-20CF, U+2100-23FF, U+2500-26FF, U+E000-F8FF, U+FB00–FB4F'|'U+20-17F, U+2B0-2FF, U+2000-206F, U+20A0-20CF, U+2100-21FF, U+2600-26FF'|'U+20-2FF, U+370-4FF, U+1E00-20CF, U+2100-23FF, U+2500-26FF, U+FB00-FB4F, U+FFF0-FFFD'|'U+20-4FF, U+530-58F, U+10D0-10FF, U+1E00-23FF, U+2440-245F, U+2500-26FF, U+FB00-FB4F, U+FE20-FE2F, U+FFF0-FFFD'|'U+00-7F'|'U+80-FF'|'U+100-17F'|'U+180-24F'|'U+1E00-1EFF'|'U+250-2AF'|'U+370-3FF'|'U+1F00-1FFF'|'U+400-4FF'|'U+500-52F'|'U+00-52F, U+1E00-1FFF, U+2200–22FF'|'U+530–58F'|'U+590–5FF'|'U+600–6FF'|'U+750–77F'|'U+8A0–8FF'|'U+700–74F'|'U+900–97F'|'U+980–9FF'|'U+A00–A7F'|'U+A80–AFF'|'U+B00–B7F'|'U+B80–BFF'|'U+C00–C7F'|'U+C80–CFF'|'U+D00–D7F'|'U+D80–DFF'|'U+118A0–118FF'|'U+E00–E7F'|'U+1A20–1AAF'|'U+AA80–AADF'|'U+E80–EFF'|'U+F00–FFF'|'U+1000–109F'|'U+10A0–10FF'|'U+1200–137F'|'U+1380–139F'|'U+2D80–2DDF'|'U+AB00–AB2F'|'U+1780–17FF'|'U+1800–18AF'|'U+1B80–1BBF'|'U+1CC0–1CCF'|'U+4E00–9FD5'|'U+3400–4DB5'|'U+2F00–2FDF'|'U+2E80–2EFF'|'U+1100–11FF'|'U+AC00–D7AF'|'U+3040–309F'|'U+30A0–30FF'|'U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F'|'U+A4D0–A4FF'|'U+A000–A48F'|'U+A490–A4CF'|'U+2000-206F'|'U+3000–303F'|'U+2070–209F'|'U+20A0–20CF'|'U+2100–214F'|'U+2150–218F'|'U+2190–21FF'|'U+2200–22FF'|'U+2300–23FF'|'U+E000-F8FF'|'U+FB00–FB4F'|'U+FB50–FDFF'|'U+1F600–1F64F'|'U+2600–26FF'|'U+1F300–1F5FF'|'U+1F900–1F9FF'|'U+1F680–1F6FF'
     /**
      * `CSS` Controls the pattern of dashes and gaps used to stroke paths.
      */
