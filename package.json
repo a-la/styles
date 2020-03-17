@@ -1,5 +1,5 @@
 {
-  "name": "@a-la/style",
+  "name": "@a-la/styles",
   "version": "0.0.0-pre",
   "description": "CSS Properties For JSX.",
   "main": "src/index.js",
@@ -22,7 +22,8 @@
   "files": [
     "src/index.js",
     "preact",
-    "types/index.d.ts"
+    "types/index.d.ts",
+    "map.json"
   ],
   "types": "types/index.d.ts",
   "repository": {

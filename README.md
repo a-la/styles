@@ -1,11 +1,11 @@
-# @a-la/style
+# @a-la/styles
 
-[![npm version](https://badge.fury.io/js/@a-la/style.svg)](https://www.npmjs.com/package/@a-la/style)
+[![npm version](https://badge.fury.io/js/@a-la/styles.svg)](https://www.npmjs.com/package/@a-la/styles)
 
-`@a-la/style` is CSS Properties For JSX.
+`@a-la/styles` is CSS Properties For JSX.
 
 ```sh
-yarn add @a-la/style
+yarn add @a-la/styles
 ```
 
 ## Table Of Contents
@@ -26,7 +26,7 @@ yarn add @a-la/style
 The package is available by importing its default function:
 
 ```js
-import style from '@a-la/style'
+import style from '@a-la/styles'
 ```
 
 <p align="center"><a href="#table-of-contents">
@@ -47,7 +47,7 @@ __<a name="type-config">`Config`</a>__: Options for the program.
 | text      | <em>string</em>  | A text to return. | -       |
 
 ```js
-import style from '@a-la/style'
+import style from '@a-la/styles'
 
 (async () => {
   const res = await style({
@@ -57,7 +57,7 @@ import style from '@a-la/style'
 })()
 ```
 ```
-@a-la/style called with example
+@a-la/styles called with example
 example
 ```
 

@@ -2,7 +2,7 @@ import { join } from 'path'
 import { debuglog } from 'util'
 import { readFileSync } from 'fs'
 
-const LOG = debuglog('@a-la/style')
+const LOG = debuglog('@a-la/styles')
 
 /**
  * A testing context for the package.

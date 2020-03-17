@@ -2,4 +2,4 @@
 
 ### 0.0.0-pre
 
-- Create `@a-la/style` with _[`NodeTools`](https://art-deco.github.io/nodetools)_.
+- Create `@a-la/styles` with _[`NodeTools`](https://art-deco.github.io/nodetools)_.

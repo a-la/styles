@@ -46,3 +46,16 @@ const j = JSX.join(EOL)
 
 writeFileSync('preact/index.d.ts', PREACT(j))
 writeFileSync('types/index.d.ts', REACT(j))
+
+const map = props.reduce((acc, { name }) => {
+  const hasHyphen = /-/.test(name)
+  acc[name] = 1
+  if (!hasHyphen) return acc
+  const hyphen = name.replace(/-(\S)/g, (m, l) => {
+    return l.toUpperCase()
+  }).replace(/^\S/, (m) => m.toLowerCase())
+  acc[hyphen] = name
+  return acc
+}, {})
+
+writeFileSync('map.json', JSON.stringify(map, null, 2))
