@@ -1,6 +1,6 @@
 {
   "name": "@a-la/styles",
-  "version": "0.0.0-pre",
+  "version": "1.0.0",
   "description": "CSS Properties For JSX.",
   "main": "src/index.js",
   "module": "src/index.js",
